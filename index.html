@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Priya Rajkumar">
+    <meta name="description" content="Priya's Personal Website">
+    <title>Priya's Website</title>
+<style> 
+p {
+  font: 15px Arial, sans-serif;
+}
+a:hover {
+  color: rgb(194, 133, 164);
+}
+* {
+    background-color: rgb(235, 235, 235);
+}
+p.intro { 
+  background: rgb(159, 171, 144);
+}
+#pictures {
+  width: 00px;
+  height: 300px;
+  border: 1px solid rgb(228, 220, 220);
+  display: flex;
+}
+
+#main div {
+  -ms-flex: 1;  
+  flex: 1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto ;
+    background-color: #95a8b8;
+    padding: 10px;
+  }  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+  }
+</style>
+</head>
+
+<body>
+  <h1>My Website</h1>
+  <h2>About Me</h2>
+  <p class = "intro">hi!! i'm priya. i'm a junior at UC Berkeley studying computer science.
+       i love music, space, and coding! this summer i interned at twitch 
+       as a software engineer intern and had a fullstack project, which peaked
+        my interest in front-end development. I hope you enjoy my website :) 
+      </p>
+      <div id="pictures">
+        <div style="background-color:coral;"> <img src="IMG_1365.JPG" alt="Me at ucsc" style="width:200px;height:300;"> </div>
+        <div style="background-color:lightblue;"><img src="IMG_3697.JPG" alt="Me at ucsc" style="width:200px;height:300;"> </div> 
+        <div style="background-color:#72a572;"><img src="sona.JPG" alt="Me at ucsc" style="width:200px;height:300;"></div>
+      </div>
+      <h6>some pics of me and my dog</h6>
+      <h3><button type= "button" onclick="alert('checkout my linkedin!')">Click Me!</button></h3>
+  
+      <h2>Work</h2>
+  <h4>here are my two main projects I've worked on.</h4>
+  <div class="grid-container">
+    <div class="grid-item"><h5>Twitch Internal Sort/Search Tracker</h5></div>
+    <div class="grid-item"><h5>Real Time Planet Tracker</h5></div>
+    <div class="grid-item">
+        <ul>
+            <li>Built highly requested search and sort tool for Twitch’s internal notification service using ElasticSearch and DynamoDB</li>
+            <li>Extended API for frontend to communicate with ElasticSearch (ES) cluster and obtain metadata for respective ES dataset</li>
+            <li>Tested code through data visualization dashboard, Kibana, to build queries and pagination</li>
+          </ul>
+    </div>
+    <div class="grid-item">
+        <ul>
+            <li>Built real-time planet tracking & trajectory prediction system, and corresponding hardware device, to track celestial bodies</li>
+            <li>Fully developed celestial positioning algorithm by accessing orbital element parameters and physical properties like Kepler’s law</li>
+            <li>Printed hardware materials from scratch using TinkerCad and Prusa i3</li>
+          </ul>
+    </div>
+
+  </div>
+  
+  <h2>Contact</h2>
+  <ul>
+    <li> <a href="https://www.linkedin.com/in/priya-rajkumar-364189174/">LinkedIn</a></li>
+    <li> <a href="https://bluestampengineering.com/priya-r/">Past Work</a></li>
+    <li> contact me at priyaa@berkeley.edu!</li>
+  </ul>
+  <h2>Whats your favorite language out of the options below?</h2>
+  <p id="question">
+    <form>
+      <input type="radio" id="html" name="fav_language" value="HTML">  
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="Python">
+      <label for="css">Python</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="Golang">
+      <label for="javascript">Golang</label> <br><br>
+    </p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <script>
+    function myFunction() {
+      document.getElementById("question").innerHTML = "nice!";
+    }
+    </script>
+  </body>
+</html>
+
+
+
+  
